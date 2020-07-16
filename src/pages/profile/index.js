@@ -13,7 +13,7 @@ export default function Profile() {
     const [products, setProducts] = useState([]);
 
     useEffect( () => {
-        api.get('products')
+        api.get('/')
         .then( response => {
             setProducts(response.data.produtos);
         })

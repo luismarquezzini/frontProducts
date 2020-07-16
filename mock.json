@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "criadoEm": "2020-07-16T13:20:09.098Z",
+      "ativo": false,
+      "_id": "5f10541a560ce1686f9a1bc5",
+      "sku": "Blusa vermelha",
+      "quantidade": 5,
+      "preco": 55.95,
+      "vendedor": "5f105122d342f6628310f6b5",
+      "__v": 0
+    },
+    {
+      "criadoEm": "2020-07-16T13:20:09.098Z",
+      "ativo": false,
+      "_id": "5f10542e560ce1686f9a1bc6",
+      "sku": "Calça marrom",
+      "quantidade": 15,
+      "preco": 23.95,
+      "vendedor": "5f105122d342f6628310f6b5",
+      "__v": 0
+    },
+    {
+      "criadoEm": "2020-07-16T13:20:09.098Z",
+      "ativo": false,
+      "_id": "5f10543b560ce1686f9a1bc7",
+      "sku": "Casaco roxo",
+      "quantidade": 10,
+      "preco": 199.99,
+      "vendedor": "5f105122d342f6628310f6b5",
+      "__v": 0
+    }
+  ]
+}

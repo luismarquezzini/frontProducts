@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import { FiTrash2 } from 'react-icons/fi';
 import { toast } from 'react-toastify';
+import placeholder from '../../assets/logo.svg'
 
 import api from '../../services/api'
 
@@ -14,7 +15,7 @@ export default function Profile() {
     useEffect( () => {
         api.get('products')
         .then( response => {
-            setProducts(response.data.products);
+            setProducts(response.data.produtos);
         })
     }, []);
 
@@ -36,27 +37,27 @@ export default function Profile() {
 
             <ul>
                 {products.map(product => (
-                <li key={product.id}>
+                <li key={product._id}>
                     <div className="product-container">
                         <div className="product__photo">
                             <div className="photo-container">
                                 <div className="photo-main">
-                                    <img src={product.photo} alt="product image"></img>
+                                    <img src={placeholder} alt="product image"></img>
                                 </div>
                             </div>
                         </div>
                         <div className="product__info">
                             <div className="title">
-                                <h1>{product.name}</h1>
-                                <span>COD: {product.id}</span>
+                                <h1>{product.sku}</h1>
+                                <span>Quantidade: {product.id}</span>
                             </div>
                             <div className="price">
-                                {Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(product.price)}
+                                {Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(product.preco)}
                             </div>
                             <div className="description">
                                 <h3>Descrição:</h3>
                                 <ul>
-                                    <li>{product.description}</li>
+                                    <li>Description placeholder</li>
                                 </ul>
                             </div>
 
